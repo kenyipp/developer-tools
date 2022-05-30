@@ -1,0 +1,28 @@
+{
+	"name": "useful-plugin",
+	"version": "0.1.0",
+	"engines": {
+		"node": "16.x"
+	},
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 2800",
+		"build": "next build",
+		"start": "next start -p $PORT",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"lodash": "^4.17.21",
+		"moment": "^2.29.3",
+		"next": "12.1.6",
+		"react": "18.1.0",
+		"react-dom": "18.1.0",
+		"react-onclickoutside": "^6.12.1",
+		"sass": "^1.52.1",
+		"url-slug": "^3.0.4"
+	},
+	"devDependencies": {
+		"eslint": "8.16.0",
+		"eslint-config-next": "12.1.6"
+	}
+}
