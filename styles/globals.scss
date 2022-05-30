@@ -1,7 +1,9 @@
+@import "./bootstrap/bootstrap.scss";
+
 html,
 body,
 #__next {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	position: absolute;
 	top: 0;
 	right: 0;
