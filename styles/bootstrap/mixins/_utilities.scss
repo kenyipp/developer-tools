@@ -60,6 +60,7 @@
 					}
 				}
 			} @else {
+
 				.#{$property-class + $infix + $property-class-modifier} {
 					@each $property in $properties {
 						@if $is-local-vars {

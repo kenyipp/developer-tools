@@ -10,7 +10,7 @@
 	white-space: nowrap;
 
 	// Generate the caret automatically
-	@include caret();
+	// @include caret();
 }
 
 // The dropdown menu
@@ -49,19 +49,19 @@
 		.dropdown-menu#{$infix}-start {
 			--bs-position: start;
 
-			&[data-bs-popper] {
+			// &[data-bs-popper] {
 				right: auto;
 				left: 0;
-			}
+			// }
 		}
 
 		.dropdown-menu#{$infix}-end {
 			--bs-position: end;
 
-			&[data-bs-popper] {
+			// &[data-bs-popper] {
 				right: 0;
 				left: auto;
-			}
+			// }
 		}
 	}
 }

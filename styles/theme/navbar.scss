@@ -1,0 +1,21 @@
+.znek_navbar {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 6px 0;
+	& > .navbar-brand {
+		width: $sidebar-width;
+		padding: 6px 12px;
+		font-size: 13px;
+	}
+	& > .navbar-menu {
+		width: calc(100% - $sidebar-width);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include media-breakpoint-down(md) {
+			justify-content: flex-end;
+		}
+	}
+}
+
