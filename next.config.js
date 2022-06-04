@@ -2,7 +2,6 @@
 
 const _ = require("lodash");
 const webpack = require("webpack");
-const nextBuildId = require("next-build-id");
 
 // Webpack configs
 const LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
@@ -19,10 +18,6 @@ module.exports = () => ({
 
 	// Use if you need CDN support
 	assetPrefix: "",
-
-	generateBuildId() {
-		return nextBuildId({ dir: __dirname });
-	},
 
 	headers() {
 		const defaultHeaders = converter.convert(helmetConfig);
