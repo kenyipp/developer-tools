@@ -1,0 +1,57 @@
+@import "./variables.scss";
+
+.navbar-dark,
+.btn-link,
+a {
+	color: $text-color;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.card {
+	background-color: $content-color;
+	color: $text-color;
+	// padding: 4px 6px;
+
+	.card-title {
+		font-weight: 400;
+		color: $yellow;
+		padding-bottom: 4px;
+		border-bottom: 1px solid $border-color;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			width: 100px;
+			height: 1px;
+			background-color: $yellow;
+		}
+	}
+
+	.card-body {
+		.form-label {
+			color: $yellow;
+			font-weight: 500;
+		}
+		.form-control {
+			background-color: transparent;
+			border: 0;
+			border-bottom: 1px solid $border-color;
+			color: white;
+		}
+		.form-check {
+			cursor: pointer;
+			margin-bottom: 6px;
+			&> .form-check-label {
+				cursor: pointer;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

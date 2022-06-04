@@ -13,6 +13,7 @@
 		"css": "node-sass ./styles/globals.scss ./output/complied.css"
 	},
 	"dependencies": {
+		"classnames": "^2.3.1",
 		"core-js": "^2.6.12",
 		"helmet": "^5.1.0",
 		"lodash": "^4.17.21",
@@ -22,6 +23,7 @@
 		"react-decoration": "^2.1.0",
 		"react-dom": "18.1.0",
 		"react-onclickoutside": "^6.12.1",
+		"react-sidebar": "^3.0.2",
 		"sass": "^1.52.1",
 		"url-slug": "^3.0.4"
 	},
