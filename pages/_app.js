@@ -17,7 +17,7 @@ class App extends NextApp {
 	constructor(props) {
 		super(props);
 		this.state = {
-			open: true,
+			open: false,
 			selected: null
 		};
 	}
@@ -83,7 +83,7 @@ class App extends NextApp {
 				</nav>
 				<main className="app__container">
 					<ReactSidebar
-						sidebar={<Sidebar />}
+						sidebar={<Sidebar onClose={() => this.onSetSidebarOpen(false)} />}
 						open={open}
 						onSetOpen={this.onSetSidebarOpen}
 						overlayClassName="react-sidebar-overlay"

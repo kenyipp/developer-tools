@@ -16,6 +16,7 @@ module.exports = [
 	},
 
 	{
+		id: "developer-tools",
 		icon: "fa fa-code",
 		type: "menu",
 		name: {
@@ -25,13 +26,22 @@ module.exports = [
 		menu: [
 			{
 				name: {
-					en: "SQLize JSON",
-					cn: "SQLize JSON"
+					en: "Icon Peview",
+					cn: "圖標"
 				},
 				path: [
-					"/sqlize"
+					"/icon"
 				]
 			}
+			// {
+			// 	name: {
+			// 		en: "SQLize JSON",
+			// 		cn: "SQLize JSON"
+			// 	},
+			// 	path: [
+			// 		"/sqlize"
+			// 	]
+			// }
 		]
 	},
 
