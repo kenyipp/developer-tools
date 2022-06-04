@@ -48,7 +48,6 @@ class Sidebar extends React.Component {
 										}
 									</a>
 								</Link>
-
 								{
 									page.type == "menu" && (
 										<ul
