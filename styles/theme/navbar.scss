@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.navbar {
+	height: $navbar-height;
+}
+
+.znek_navbar {
+	display: flex;
+	align-items: center;
+	color: #999;
+	width: 100%;
+	& > .navbar-brand {
+		width: $sidebar-width;
+		padding: 6px 12px;
+		font-size: 13px;
+	}
+	& > .navbar-menu {
+		width: calc(100% - $sidebar-width);
+		padding-right: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include media-breakpoint-down(md) {
+			justify-content: flex-end;
+		}
+	}
+
+}
+
+.navbar {
+	border-bottom: 1px solid $border-color;
+}
