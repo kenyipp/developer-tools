@@ -10,12 +10,15 @@ import Sidebar from "components/Sidebar";
 
 import "../styles/globals.scss";
 
+const ALL_OPEN = false;
+
 class App extends NextApp {
 
 	constructor(props) {
 		super(props);
 		this.state = {
-			open: false
+			open: true,
+			selected: null
 		};
 	}
 
@@ -27,7 +30,8 @@ class App extends NextApp {
 	render() {
 
 		const {
-			open
+			open,
+			selected
 		} = this.state;
 
 		const {
