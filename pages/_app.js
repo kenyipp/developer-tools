@@ -5,7 +5,7 @@ import Dropdown from "components/Dropdown";
 import ReactSidebar from "react-sidebar";
 import { autobind } from "react-decoration";
 import classnames from "classnames";
-
+import Link from "next/link";
 import Sidebar from "components/Sidebar";
 
 import "../styles/globals.scss";
@@ -43,9 +43,11 @@ class App extends NextApp {
 				</Head>
 				<nav className="navbar expand-sm navbar-dark bg-dark">
 					<div className="znek_navbar">
-						<a className="navbar-brand">
-							Developer Tools
-						</a>
+						<Link href="/">
+							<a className="navbar-brand">
+								Developer Tools
+							</a>
+						</Link>
 						<div className="navbar-menu">
 							<div className="left">
 								<button
@@ -80,9 +82,16 @@ class App extends NextApp {
 						sidebar={<Sidebar />}
 						open={open}
 						onSetOpen={this.onSetSidebarOpen}
-						shadow={false}
 						overlayClassName="react-sidebar-overlay"
 						contentClassName={classnames("react-sidebar__content", open ? "react-sidebar__content-open" : "react-sidebar__content-close")}
+						styles={{
+							overlay: {
+								zIndex: 2
+							},
+							sidebar: {
+								zIndex: 3
+							}
+						}}
 					>
 						<Component {...pageProps} />
 					</ReactSidebar>

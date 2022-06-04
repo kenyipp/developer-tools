@@ -1,17 +1,21 @@
 @import "./variables.scss";
 
 .app__container {
-	position: relative;
+	// position: relative;
 	width: 100%;
-	height: calc(100% - $navbar-height);
+	// height: 100%;
 }
 
 .react-sidebar-overlay {
-	display: none;
+	// display: none;
+}
+
+.navbar {
+	z-index: 1;
 }
 
 .react-sidebar__content {
-	padding: 12px 0;
+	padding: calc(12px + $navbar-height) 0 12px 0;
 	transition: all 0.3s ease-in-out;
 	// &-open {
 	// 	left: $sidebar-width !important;

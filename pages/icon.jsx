@@ -12,8 +12,6 @@ class IconPage extends React.Component {
 	}
 
 	render() {
-
-
 		return (
 			<div className="container-fluid h-100">
 				<div className="row">
@@ -89,7 +87,10 @@ class IconPage extends React.Component {
 															ICONS[iconSet]
 																.i
 																.map((icon, index) => (
-																	<div className="col-sm-3">
+																	<div
+																		key={index} 
+																		className="col-sm-3"
+																	>
 																		<a>
 																			<i className={icon.c} />
 																			<span>{icon.n}</span>
