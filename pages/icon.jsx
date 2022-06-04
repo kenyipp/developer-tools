@@ -35,7 +35,7 @@ class IconPage extends React.Component {
 											className="form-check-input"
 											type="radio"
 										/>
-										<label class="form-check-label">
+										<label className="form-check-label">
 											All Icon Sets
 										</label>
 									</div>
@@ -51,7 +51,7 @@ class IconPage extends React.Component {
 														className="form-check-input"
 														type="radio"
 													/>
-													<label class="form-check-label">
+													<label className="form-check-label">
 														{ICONS[iconSet].n}
 													</label>
 												</div>
@@ -79,7 +79,7 @@ class IconPage extends React.Component {
 													key={index}
 													className="icons__section"
 												>
-													<label class="card-title">
+													<label className="card-title">
 														{ICONS[iconSet].n}
 													</label>
 													<div className="row">
