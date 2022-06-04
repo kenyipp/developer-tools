@@ -26,15 +26,14 @@
 		"react-onclickoutside": "^6.12.1",
 		"react-sidebar": "^3.0.2",
 		"sass": "^1.52.1",
-		"url-slug": "^3.0.4"
+		"url-slug": "^3.0.4",
+		"lodash-webpack-plugin": "^0.11.6"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
 		"@babel/plugin-proposal-class-properties": "^7.5.0",
 		"@babel/plugin-proposal-decorators": "^7.4.4",
 		"eslint": "7",
-		"eslint-config-next": "12.0.4",
-		"lodash-webpack-plugin": "^0.11.6",
-		"next-build-id": "^3.0.0"
+		"eslint-config-next": "12.0.4"
 	}
 }
